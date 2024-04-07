@@ -33,93 +33,69 @@ class AfreecaTVIE(InfoExtractor):
                     '''
     _NETRC_MACHINE = 'afreecatv'
     _TESTS = [{
-        'url': 'http://live.afreecatv.com:8079/app/index.cgi?szType=read_ucc_bbs&szBjId=dailyapril&nStationNo=16711924&nBbsNo=18605867&nTitleNo=36164052&szSkin=',
-        'md5': 'f72c89fe7ecc14c1b5ce506c4996046e',
+        # regular content
+        'url': 'https://vod.afreecatv.com/player/121155561',
         'info_dict': {
-            'id': '36164052',
+            'id': '20240406_334AB13F_261384508_1',
+            'title': '🍒 [04.06] 조커 어몽어스 (part 1)',
+            'thumbnail': 're:^https?://(?:video|st)img.afreecatv.com/.*$',
             'ext': 'mp4',
-            'title': '데일리 에이프릴 요정들의 시상식!',
-            'thumbnail': 're:^https?://(?:video|st)img.afreecatv.com/.*$',
-            'uploader': 'dailyapril',
-            'uploader_id': 'dailyapril',
-            'upload_date': '20160503',
+            'uploader': '9호',
+            'uploader_id': 'orexxs',
+            'upload_date': '20240406',
+            'duration': 17999,
+            'timestamp': 1712406343,
         },
-        'skip': 'Video is gone',
-    }, {
-        'url': 'http://afbbs.afreecatv.com:8080/app/read_ucc_bbs.cgi?nStationNo=16711924&nTitleNo=36153164&szBjId=dailyapril&nBbsNo=18605867',
-        'info_dict': {
-            'id': '36153164',
-            'title': "BJ유트루와 함께하는 '팅커벨 메이크업!'",
-            'thumbnail': 're:^https?://(?:video|st)img.afreecatv.com/.*$',
-            'uploader': 'dailyapril',
-            'uploader_id': 'dailyapril',
+        'params': {
+            'skip_download': True,
         },
-        'playlist_count': 2,
-        'playlist': [{
-            'md5': 'd8b7c174568da61d774ef0203159bf97',
-            'info_dict': {
-                'id': '36153164_1',
-                'ext': 'mp4',
-                'title': "BJ유트루와 함께하는 '팅커벨 메이크업!'",
-                'upload_date': '20160502',
-            },
-        }, {
-            'md5': '58f2ce7f6044e34439ab2d50612ab02b',
-            'info_dict': {
-                'id': '36153164_2',
-                'ext': 'mp4',
-                'title': "BJ유트루와 함께하는 '팅커벨 메이크업!'",
-                'upload_date': '20160502',
-            },
-        }],
-        'skip': 'Video is gone',
     }, {
-        # non standard key
-        'url': 'http://vod.afreecatv.com/PLAYER/STATION/20515605',
+        # regular content
+        'url': 'https://vod.afreecatv.com/player/121155561',
         'info_dict': {
-            'id': '20170411_BE689A0E_190960999_1_2_h',
+            'id': '20240325_ACBC028E_259970062_1',
+            'title': '감스트X지피티 정신개조 트레이닝',
+            'thumbnail': 're:^https?://(?:video|st)img.afreecatv.com/.*$',
             'ext': 'mp4',
-            'title': '혼자사는여자집',
-            'thumbnail': 're:^https?://(?:video|st)img.afreecatv.com/.*$',
-            'uploader': '♥이슬이',
-            'uploader_id': 'dasl8121',
-            'upload_date': '20170411',
-            'duration': 213,
+            'uploader': 'BJ지피티',
+            'uploader_id': 'tjrdbs999',
+            'upload_date': '20240325',
+            'duration': 13629,
+            'timestamp': 1711389319,
         },
         'params': {
             'skip_download': True,
         },
     }, {
         # adult content
-        'url': 'https://vod.afreecatv.com/player/97267690',
+        'url': 'https://vod.afreecatv.com/player/119630771',
         'info_dict': {
-            'id': '20180327_27901457_202289533_1',
-            'ext': 'mp4',
-            'title': '[생]빨개요♥ (part 1)',
+            'id': '20240320_4896C4D6_259321606_1',
+            'title': 'ㅗㅜ..웽자기 오늘 12528 사랑해 승또구!!!처음이다!!만두개!! 감사합니다',
             'thumbnail': 're:^https?://(?:video|st)img.afreecatv.com/.*$',
-            'uploader': '[SA]서아',
-            'uploader_id': 'bjdyrksu',
-            'upload_date': '20180327',
-            'duration': 3601,
+            'ext': 'mp4',
+            'uploader': '하루S2',
+            'uploader_id': 'sol3712',
+            'upload_date': '20240320',
+            'duration': 1429,
+            'timestamp': 1710970558,
         },
         'params': {
             'skip_download': True,
         },
-        'skip': 'The VOD does not exist',
     }, {
-        'url': 'http://www.afreecatv.com/player/Player.swf?szType=szBjId=djleegoon&nStationNo=11273158&nBbsNo=13161095&nTitleNo=36327652',
-        'only_matching': True,
-    }, {
-        'url': 'https://vod.afreecatv.com/player/96753363',
+        # adult content
+        'url': 'https://vod.afreecatv.com/player/121024417',
         'info_dict': {
-            'id': '20230108_9FF5BEE1_244432674_1',
+            'id': '20240405_9E94EBAF_261220608_5',
+            'title': '강남에서..무슨일이? (part 1)',
+            'thumbnail': 're:^https?://(?:video|st)img.afreecatv.com/.*$',
             'ext': 'mp4',
-            'uploader_id': 'rlantnghks',
-            'uploader': '페이즈으',
-            'duration': 10840,
-            'thumbnail': 'http://videoimg.afreecatv.com/php/SnapshotLoad.php?rowKey=20230108_9FF5BEE1_244432674_1_r',
+            'uploader': '대세는BJ세야',
+            'uploader_id': 'barams01',
             'upload_date': '20230108',
-            'title': '젠지 페이즈',
+            'duration': 583,
+            'timestamp': 1712280873,
         },
         'params': {
             'skip_download': True,
